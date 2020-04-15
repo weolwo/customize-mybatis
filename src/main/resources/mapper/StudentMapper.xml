@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mapper namespace="com.poplar.mapper.StudentMapper">
+
+    <select id="getOne" parameterType="long"  resultType="com.poplar.bean.Student">
+        select id,name,note from student where id=?
+    </select>
+
+    <select id="list" resultType="com.poplar.bean.Student">
+        select id,name,note from student
+    </select>
+
+</mapper>
